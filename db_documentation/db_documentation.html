@@ -1,0 +1,1659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<!DOCTYPE html>
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml' >
+<head>
+<title>SWS</title>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+<style type='text/css'>
+body {
+    font-family: 'Segoe UI', 'Lucida sans', Dialog;
+    font-size: 13px;
+    color: #444;
+    margin: 10px;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    width: auto;
+    margin: 10px 15px 5px 0;
+}
+
+
+.bordered td, .bordered th {
+   background-color: #fafafa;
+   border: 1px solid #D5D5D5;
+   padding: 3px 3px 3px 3px;
+   white-space:pre-wrap!important;
+}
+
+.bordered th {
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 3px 3px 3px 3px;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #333333;
+}
+
+.section-header h2 {
+    background-color: #f0f0f0;
+    font-size: 16px;
+    font-weight: normal;
+    border-top: solid 1px #D5D5D5;
+    border-bottom: solid 1px #D5D5D5;
+    width: 95%;
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    color: #4d82b8;
+}
+.section-header div {
+    font-size: 70%;
+    padding-left: 5px;
+}
+
+
+a, a:visited, a:hover, a:active {
+  color: #044282;
+  text-decoration: none;
+}
+
+th > a {
+    color:#858585;
+}
+
+.lg {
+    font-size: 110%;
+}
+
+h1 {
+    font-family: Verdana,Arial,Helvetica;
+    font-weight: normal;
+    color: #4d82b8;
+    margin: 20px 0 10px 0;
+}
+
+</style>
+</head>
+
+<body>
+<div class='svg-container'>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' text-rendering='optimizeLegibility'   width='1184' height='862' viewbox='0 0 1184 862' >
+  <script type='text/ecmascript'>
+  <![CDATA[
+  function hghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','highlight');  }  }
+  function uhghl(el) { for ( var i in el ){ document.getElementById(el[i]).setAttribute('class','scene'); }  } 
+  ]]>
+  </script> 
+
+<style type='text/css'>
+  text                { fill:#000000; font-family: Trebuchet MS, 'Trebuchet MS', Dialog; font-size:12px; }
+  a text:hover        { text-shadow: 0 0 6px #d0ce00; }
+  text.highlight      { text-shadow: 0 0 4px #eac533; }
+  text.colType        { fill:#b3b3b3; }
+  text.relName        { fill:#b09c7c; }
+  path                { stroke:#5c554f; stroke-width:1.15; fill:none; }
+  path.virtual        { stroke:#b7642d; }
+  path.dotted         { stroke-dasharray:4,2; }
+  path.scene          { stroke-width:10; opacity:0;}
+  path.highlight      { stroke-width:5; stroke:#eac533; opacity:0.6;}
+  rect.table          { fill:#ffffff; stroke:#aaa; stroke-width:1;shape-rendering:crispEdges;filter:url(#shadow); }
+  line.delim          { stroke-width:1; shape-rendering:crispEdges; }
+  text.callout        { fill:#000000; font-family: Trebuchet MS, 'Trebuchet MS', Dialog; font-size:12px; }
+  rect.callout        { fill:url(#calloutGradient); stroke:#bebdbd; stroke-width:0.5; filter: url(#shadow);}
+  rect.grp            { stroke:#b1b1b1; stroke-width:1.7; opacity:0.8; }
+</style>
+<defs>
+  <pattern id='layoutBgA' patternUnits='userSpaceOnUse'  width='10' height='20' x='0' y='0' viewBox='0 0 5 10'>  
+     <line x1='-2' y1='1' x2='7' y2='10' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='6' x2='7' y2='15' stroke='#efefef' stroke-width='.5'/>  
+     <line x1='-2' y1='-4' x2='7' y2='5' stroke='#efefef' stroke-width='.5'/>  
+  </pattern>  
+  <radialGradient id='layoutBgB' gradientUnits='userSpaceOnUse' cx='50%' cy='50%' r='75%' fx='46%' fy='22%'>
+     <stop offset='0%' stop-opacity='.2' stop-color='#f5f5f5' />  
+     <stop offset='100%' stop-color='#efefef' />  
+  </radialGradient>
+  <pattern id='layoutBgTr' patternUnits='userSpaceOnUse'  width='300' height='300' x='0' y='0' viewBox='0 0 300 300'>  
+    <text x='-85' y='200' transform='rotate(-45)' style='font-family:Arial;font-size:78px;font-weight:bold;fill:#e7e7e7;'>&#84;&#82;&#73;&#65;&#76;</text> 
+    <text x='-130' y='230' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#77;ove &#116;he m&#111;use &#111;ver &#116;ables</text> 
+    <text x='-85' y='250' transform='rotate(-45)' style='font-family:Arial;font-size:24px;font-weight:bold;fill:#e7e7e7;'>&#116;o re&#97;d &#116;he c&#111;mmen&#116;s</text> 
+  </pattern>  
+  <linearGradient id='groupUnderTitleLine' x1='0%' y1='0%' x2='100%' y2='0%' >
+          <stop offset='0%' stop-color='#999999' stop-opacity='0.7'/> 
+          <stop offset='100%' stop-color='#999999' stop-opacity='0' /> 
+   </linearGradient>
+  <radialGradient id='calloutGradient' cx='25%' cy='20%' r='80%' fx='10%' fy='10%'>
+	   <stop offset='0%' stop-color='#ffffff' />
+    <stop offset='100%' stop-color='#f8f6d1' />
+  </radialGradient>
+  <filter id='shadow' width='120%' height='120%'> 
+      <feOffset result='offOut' in='SourceGraphic' dx='1' dy='1' /> 
+      <feColorMatrix result='matrixOut' in='offOut' type='matrix' 
+      values='0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.1 0 0 0 0 0 0.3 0' /> 
+      <feGaussianBlur result='blurOut' in='matrixOut' stdDeviation='3' /> 
+      <feBlend in='SourceGraphic' in2='blurOut' mode='normal' /> 
+    </filter> 
+  <filter id='fkShadow' height='130%'> 
+    <feGaussianBlur in='SourceAlpha' stdDeviation='1.5'/> <!-- stdDeviation is how much to blur -->
+    <feOffset dx='1.2' dy='1.2' result='offsetblur'/> <!-- how much to offset -->
+    <feMerge>
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in='SourceGraphic'/> <!-- this contains the element that the filter is applied to -->
+    </feMerge>
+  </filter>
+  <radialGradient id='legendGradient' fx='5%' fy='5%' r='75%' spreadMethod='pad'>
+          <stop offset='0%' stop-color='#eefbf2' stop-opacity='1'/> 
+          <stop offset='100%' stop-color='#cff9cb' stop-opacity='1' /> 
+   </radialGradient>
+  <symbol id='calloutArrowDown' overflow='visible' >
+      <path d='M 0,0 L 8,12 L 16,0 z' style='fill:#f8f6d1;stroke:none; filter: url(#shadow);' />
+      <path d='M 0,0 L 8,12 L 16,0' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='calloutArrowUp' overflow='visible' >
+      <path d='M 0,16 L 8,4 L 16,16 z' style='fill:#ffffff; stroke:none; filter: url(#shadow);' />
+      <path d='M 0,16 L 8,4 L 16,16' style='stroke:#bebdbd; stroke-width:0.5;' />
+  </symbol>
+  <symbol id='pk' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <path style='fill:#fffa7d;stroke:#765f03;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;'
+        d='M 9.3678877,3.5695485 C 9.1030218,3.2729386 9.0796382,2.7628519 9.3396185,2.4517097 9.5449651,2.1956495 9.9040386,2.0980533 10.199638,2.2169415 10.533525,2.3415459 10.775153,2.706942 10.750675,3.0842709 10.737029,3.3980003 10.541153,3.699122 10.258248,3.8066067 9.966649,3.9250429 9.6169668,3.8418805 9.4008073,3.6062324 9.3894892,3.5943518 9.3785264,3.582104 9.3678886,3.5695487 z M 11.226617,6.9916004 C 11.888137,6.3548946 12.293488,5.4172188 12.311087,4.442353 12.378144,2.7379364 11.248678,1.0541269 9.7322318,0.44767357 8.3887112,-0.1280313 6.7865012,0.26822889 5.8918395,1.4007929 5.080823,2.3839145 4.9336815,3.8452096 5.3635544,5.101615 L 4.3670905,5.315913 C 4.0664984,5.3682645 4.0967703,5.6316724 4.2574957,5.8208829 L 4.9124,6.5655244 4.1543436,7.2512357 3.2136002,7.2163506 3.1674775,8.5586827 2.0406832,8.5086512 1.5965306,8.9299953 1.5471661,10.179833 0.75616674,10.195223 0.2112857,10.758575 0.15354288,11.735988 0.07199052,12.765553 c 0.36440953,0.238225 0.79006967,0.195492 1.44938278,-0.02675 L 6.3033562,8.1282037 6.8217102,8.6765688 C 6.9985465,8.8799427 7.3003699,8.7497574 7.358381,8.5016252 L 7.4938877,7.5084164 c 0.8537488,0.3985387 1.8303125,0.4711541 2.6851793,0.1427713 0.393927,-0.1407258 0.746858,-0.3701772 1.04755,-0.6595873 z'/>
+     <path d='M 6.8014948,6.3102123 0.15369063,13.024481 0.21560535,12.141962 6.0062342,6.2683782 z'
+        style='fill:#ffe5a5;fill-opacity:1;stroke:#854e31;stroke-width:0.06912433;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:3.00300009'/>
+    </g>
+  </symbol>
+  <symbol id='unq' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+      <text x='5.8' y='7.4' style='font-size:7px;fill:#8a8a8a;'>1</text>
+    </g>
+  </symbol>
+  <symbol id='idx' overflow='visible' >
+    <g transform='scale(0.99)'>
+      <rect style='fill:#fbea8e;stroke:#7e4d31;stroke-width:0.71934468;stroke-linecap:round;stroke-linejoin:round;'
+         width='2.29' height='8.43' x='7.48' y='-0.76' ry='1.14' transform='matrix(0.701,0.713,-0.727,0.685,0,0)' />
+      <path style='fill:white;stroke:#858585;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;'
+         d='m 26.04,8.64 a 4.13,4.13 0 1 1 -8.26,0 4.13,4.13 0 1 1 8.26,0 z'
+         transform='matrix(1.025,0,0,0.987,-14.690,-3.862)' />
+    </g>
+  </symbol>
+  <symbol id='fk' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+      d='M 12.48,0.33 7.07,0.89 9.067,2.974 0.329,11.731 1.073,12.597 9.811,3.841 11.77,5.78 z' />
+    </g>
+  </symbol>
+  <symbol id='ref' overflow='visible' >
+    <g transform='scale(0.87)'>
+      <path style='fill:#f3e1b7;stroke:#7e471f;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.10,12.70 5.31,12.15 3.40,10.06 11.82,1.32 11.11,0.45 2.68,9.19 0.80,7.24 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag0' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#b7d0f6;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag1' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#f4a393;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='flag2' overflow='visible' >
+    <g transform='scale(0.92)'>
+      <path style='fill:#77ec8b;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0.12,12.67 0.16,7.22 C 2.59,7.22 4.13,8.78 9.22,4.22 5.68,4.98 2.53,4.50 0.09,1.80 z'/>
+    </g>
+  </symbol>
+  <symbol id='nn' overflow='visible' >
+  <path style='stroke:#9b3e50;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;'
+          d='M 0,0 3,3 M 0,3 3,0 z'/>
+  </symbol>
+  <symbol id='view' overflow='visible' >
+    <g transform='scale(0.99)'>
+     <line x1='12' y1='6' x2='19' y2='0' stroke='black' stroke-width='0.5' />
+     <line x1='0' y1='6' x2='7' y2='0' stroke='black' stroke-width='0.5' />
+     <circle cx='3' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+     <circle cx='10' cy='6' r='3' fill='#f9ebbc' stroke='black' stroke-width='0.5'/>
+    </g>
+  </symbol>
+  <marker id='arrow01' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 8.000,4.000 L 16.000,4.000 L 8.000,0.000 L 16.000,4.000 L 8.000,8.000' />
+  </marker>
+  <marker id='arrow1' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 8.000,4.000 L 16.000,4.000 L 8.000,0.000 L 16.000,4.000 L 8.000,8.000' />
+  </marker>
+  <marker id='foot01' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+    <circle cx='12.00' cy='4.00' r='2.67' style='fill:white;stroke:#5e554d;' />
+    <path d='M 4.00,0.00 L 4.00, 8.00 z' />
+  </marker>
+  <marker id='foot0p' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+    <circle cx='12.00' cy='4.00' r='2.67' style='fill:white;stroke:#5e554d;' />
+    <path d='M 0.00,0.00 L 8.00,4.00 L 0.00,8.00' />
+  </marker>
+  <marker id='foot1' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+    <path d='M 8.00,0.00 L 8.00, 8.00 z' />
+    <path d='M 4.00,0.00 L 4.00, 8.00 z' />
+  </marker>
+  <marker id='foot1p' viewBox='0 0 16.00 8.00' refX='8.00' refY='4.00' markerUnits='strokeWidth' markerWidth='16.00' markerHeight='8.00' orient='auto'>
+    <path d='M 0.00,4.00 L 16.00,4.00 z' />
+    <path d='M 8.00,0.00 L 8.00, 8.00 z' />
+    <path d='M 0.00,0.00 L 8.00,4.00 L 0.00,8.00' />
+  </marker>
+  <linearGradient id='tbg_1f5182' x1='0%' y1='0%' x2='0%' y2='100%' >
+     <stop offset='0%' stop-color='#4975a1' /> 
+     <stop offset='100%' stop-color='#1f5182' /> 
+  </linearGradient>
+</defs>
+
+<!-- ============= Desktop ============= -->
+<rect x='1' y='1' width='1182' height='860' rx='8' ry='8' style='fill:url(#layoutBgB); stroke:#333333; stroke-width:0.5;' />
+<rect x='1' y='1' width='1182' height='860' rx='8' ry='8' style='fill:url(#layoutBgTr);' />
+<rect x='1' y='1' width='1182' height='860' rx='8' ry='8' style='fill:url(#layoutBgA); stroke:#333333; stroke-width:0.5;' />
+
+<!-- ============= Legend ============= -->
+<g transform='translate(10,10)'>
+  <rect x='10' y='10' width='330' height='52' rx='6' ry='6' style='fill:url(#legendGradient);filter:url(#shadow);'/> 
+  <text x='65' y='33'>SWS</text> 
+  <text x='65' y='49' style='fill:#aaaaaa; font-size:11px;'><tspan>Read table &amp; column comments as mouse-over tooltips.</tspan></text> 
+<g transform="scale(0.75,0.75) translate(10,7)" > <a xlink:href='http://www.dbschema.com'> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.04" y="59.44" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.83" y="59.57" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="40.35" y="71.62" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.27" height="11.26" x="54.68" y="71.75" ry="3.14" transform="matrix(0.90187511,-0.43199686,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.48" y="19.67" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.36" y="19.80" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="13.79" y="31.78" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.35" height="11.20" x="28.21" y="31.92" ry="3.12" transform="matrix(0.84723158,0.53122372,0,1,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.59" y="-9.62" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.63" y="-9.46" ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#2c49eb;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="34.90" y="5.77"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <rect style="fill:#eb7f2c;stroke:none;shape-rendering:geometricPrecision;" width="13.49" height="14.24" x="49.47" y="5.93"  ry="3.97" transform="matrix(0.85815392,0.51339249,-0.91732703,0.39813455,0,0)" /> <title>Generated using DbSchema - www.dbschema.com</title> </a></g>
+</g>
+
+<g transform='translate(0,110)'>
+<!-- ============= Fk 'grid_subscription_fk_grid_subscription' ============= -->
+<path id='grid_subscription_fk_grid_subscription'  onmouseover="hghl(['grid_subscription_fk_grid_subscription','sws.grid_subscription.grid_id','sws.grid.id'])" onmouseout="uhghl(['grid_subscription_fk_grid_subscription','sws.grid_subscription.grid_id','sws.grid.id'])" transform='translate(8,0)' class='scene' d='M 64 432 L 64,464' >
+	<title>Fk fk_grid_subscription
+grid_subscription ref grid ( grid_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 64 432 L 64,464' ></path>
+<text x='79' y='433' transform='rotate(90 79,433)' title='Fk fk_grid_subscription
+grid_subscription ref grid ( grid_id -&gt; id )' class='relName'>grid_id</text>
+<!-- ============= Fk 'grid_subscription_fk_grid_subscription_0' ============= -->
+<path id='grid_subscription_fk_grid_subscription_0'  onmouseover="hghl(['grid_subscription_fk_grid_subscription_0','sws.grid_subscription.user_id','sws.user.id'])" onmouseout="uhghl(['grid_subscription_fk_grid_subscription_0','sws.grid_subscription.user_id','sws.user.id'])" transform='translate(8,0)' class='scene' d='M 160 352 L 368,352' >
+	<title>Fk fk_grid_subscription_0
+grid_subscription ref user ( user_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 160 352 L 368,352' ></path>
+<text x='169' y='347' transform='rotate(0 169,347)' title='Fk fk_grid_subscription_0
+grid_subscription ref user ( user_id -&gt; id )' class='relName'>user_id</text>
+<!-- ============= Fk 'grid_fk_grid' ============= -->
+<path id='grid_fk_grid'  onmouseover="hghl(['grid_fk_grid','sws.grid.user_id','sws.user.id'])" onmouseout="uhghl(['grid_fk_grid','sws.grid.user_id','sws.user.id'])" transform='translate(8,0)' class='scene' d='M 144 496 L 392,496 Q 400,496 400,488 L 400,416' >
+	<title>Fk fk_grid
+grid ref user ( user_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 144 496 L 392,496 Q 400,496 400,488 L 400,416' ></path>
+<text x='153' y='491' transform='rotate(0 153,491)' title='Fk fk_grid
+grid ref user ( user_id -&gt; id )' class='relName'>user_id</text>
+<!-- ============= Fk 'portfolio_items_fk_portfolio_items' ============= -->
+<path id='portfolio_items_fk_portfolio_items'  onmouseover="hghl(['portfolio_items_fk_portfolio_items','sws.portfolio_items.portfolio_id','sws.portfolio.id'])" onmouseout="uhghl(['portfolio_items_fk_portfolio_items','sws.portfolio_items.portfolio_id','sws.portfolio.id'])" transform='translate(8,0)' class='scene' d='M 352 608 L 304,608' >
+	<title>Fk fk_portfolio_items
+portfolio_items ref portfolio ( portfolio_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 352 608 L 304,608' ></path>
+<text x='293' y='603' transform='rotate(0 293,603)' title='Fk fk_portfolio_items
+portfolio_items ref portfolio ( portfolio_id -&gt; id )' class='relName'>portfolio_id</text>
+<!-- ============= Fk 'portfolio_items_fk_portfolio_items_0' ============= -->
+<path id='portfolio_items_fk_portfolio_items_0'  onmouseover="hghl(['portfolio_items_fk_portfolio_items_0','sws.portfolio_items.item_id','sws.company.id'])" onmouseout="uhghl(['portfolio_items_fk_portfolio_items_0','sws.portfolio_items.item_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 464 624 L 688,624' >
+	<title>Fk fk_portfolio_items_0
+portfolio_items ref company ( item_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 464 624 L 688,624' ></path>
+<text x='473' y='619' transform='rotate(0 473,619)' title='Fk fk_portfolio_items_0
+portfolio_items ref company ( item_id -&gt; id )' class='relName'>item_id</text>
+<!-- ============= Fk 'item_transactions_fk_item_transactions' ============= -->
+<path id='item_transactions_fk_item_transactions'  onmouseover="hghl(['item_transactions_fk_item_transactions','sws.item_transactions.item_id','sws.company.id'])" onmouseout="uhghl(['item_transactions_fk_item_transactions','sws.item_transactions.item_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 608 464 L 688,464' >
+	<title>Fk fk_item_transactions
+item_transactions ref company ( item_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 608 464 L 688,464' ></path>
+<text x='617' y='459' transform='rotate(0 617,459)' title='Fk fk_item_transactions
+item_transactions ref company ( item_id -&gt; id )' class='relName'>item_id</text>
+<!-- ============= Fk 'item_transactions_fk_item_transactions_0' ============= -->
+<path id='item_transactions_fk_item_transactions_0'  onmouseover="hghl(['item_transactions_fk_item_transactions_0','sws.item_transactions.user_id','sws.user.id'])" onmouseout="uhghl(['item_transactions_fk_item_transactions_0','sws.item_transactions.user_id','sws.user.id'])" transform='translate(8,0)' class='scene' d='M 512 432 L 512,408 Q 512,400 504,400 L 496,400' >
+	<title>Fk fk_item_transactions_0
+item_transactions ref user ( user_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 512 432 L 512,408 Q 512,400 504,400 L 496,400' ></path>
+<text x='515' y='427' transform='rotate(270 515,427)' title='Fk fk_item_transactions_0
+item_transactions ref user ( user_id -&gt; id )' class='relName'>user_id</text>
+<!-- ============= Fk 'company_score_fk_company_score' ============= -->
+<path id='company_score_fk_company_score'  onmouseover="hghl(['company_score_fk_company_score','sws.company_score.company_id','sws.company.id'])" onmouseout="uhghl(['company_score_fk_company_score','sws.company_score.company_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 928 480 L 848,480' >
+	<title>Fk fk_company_score
+company_score ref company ( company_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 928 480 L 848,480' ></path>
+<text x='867' y='475' transform='rotate(0 867,475)' title='Fk fk_company_score
+company_score ref company ( company_id -&gt; id )' class='relName'>company_id</text>
+<!-- ============= Fk 'person_fk_person' ============= -->
+<path id='person_fk_person'  onmouseover="hghl(['person_fk_person','sws.person.company_id','sws.company.id'])" onmouseout="uhghl(['person_fk_person','sws.person.company_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 672 304 L 712,304 Q 720,304 720,312 L 720,448' >
+	<title>Fk fk_person
+person ref company ( company_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 672 304 L 712,304 Q 720,304 720,312 L 720,448' ></path>
+<text x='681' y='299' transform='rotate(0 681,299)' title='Fk fk_person
+person ref company ( company_id -&gt; id )' class='relName'>company_id</text>
+<!-- ============= Fk 'company_info_fk_company_info' ============= -->
+<path id='company_info_fk_company_info'  onmouseover="hghl(['company_info_fk_company_info','sws.company_info.company_id','sws.company.id'])" onmouseout="uhghl(['company_info_fk_company_info','sws.company_info.company_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 768 384 L 768,448' >
+	<title>Fk fk_company_info
+company_info ref company ( company_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 768 384 L 768,448' ></path>
+<text x='783' y='385' transform='rotate(90 783,385)' title='Fk fk_company_info
+company_info ref company ( company_id -&gt; id )' class='relName'>company_id</text>
+<!-- ============= Fk 'company_info_fk_company_info_0' ============= -->
+<path id='company_info_fk_company_info_0'  onmouseover="hghl(['company_info_fk_company_info_0','sws.company_info.ceo_person_id','sws.person.id'])" onmouseout="uhghl(['company_info_fk_company_info_0','sws.company_info.ceo_person_id','sws.person.id'])" transform='translate(8,0)' class='scene' d='M 736 128 L 672,128' >
+	<title>Fk fk_company_info_0
+company_info ref person ( ceo_person_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 736 128 L 672,128' ></path>
+<text x='661' y='123' transform='rotate(0 661,123)' title='Fk fk_company_info_0
+company_info ref person ( ceo_person_id -&gt; id )' class='relName'>ceo_person_id</text>
+<!-- ============= Fk 'company_info_fk_company_info_1' ============= -->
+<path id='company_info_fk_company_info_1'  onmouseover="hghl(['company_info_fk_company_info_1','sws.company_info.company_industry_id','sws.company_industry.id'])" onmouseout="uhghl(['company_info_fk_company_info_1','sws.company_info.company_industry_id','sws.company_industry.id'])" transform='translate(8,0)' class='scene' d='M 912 304 L 1008,304' >
+	<title>Fk fk_company_info_1
+company_info ref company_industry ( company_industry_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 912 304 L 1008,304' ></path>
+<text x='921' y='299' transform='rotate(0 921,299)' title='Fk fk_company_info_1
+company_info ref company_industry ( company_industry_id -&gt; id )' class='relName'>company_industry_id</text>
+<!-- ============= Fk 'company_industry_fk_company_industry' ============= -->
+<path id='company_industry_fk_company_industry'  onmouseover="hghl(['company_industry_fk_company_industry','sws.company_industry.company_id','sws.company.id'])" onmouseout="uhghl(['company_industry_fk_company_industry','sws.company_industry.company_id','sws.company.id'])" transform='translate(8,0)' class='scene' d='M 1008 400 L 840,400 Q 832,400 832,408 L 832,448' >
+	<title>Fk fk_company_industry
+company_industry ref company ( company_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 1008 400 L 840,400 Q 832,400 832,408 L 832,448' ></path>
+<text x='947' y='395' transform='rotate(0 947,395)' title='Fk fk_company_industry
+company_industry ref company ( company_id -&gt; id )' class='relName'>company_id</text>
+<!-- ============= Fk 'company_industry_fk_company_industry_0' ============= -->
+<path id='company_industry_fk_company_industry_0'  onmouseover="hghl(['company_industry_fk_company_industry_0','sws.company_industry.primary_id','sws.industry.id'])" onmouseout="uhghl(['company_industry_fk_company_industry_0','sws.company_industry.primary_id','sws.industry.id'])" transform='translate(8,0)' class='scene' d='M 1040 288 L 1040,128' >
+	<title>Fk fk_company_industry_0
+company_industry ref industry ( primary_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 1040 288 L 1040,128' ></path>
+<text x='1043' y='283' transform='rotate(270 1043,283)' title='Fk fk_company_industry_0
+company_industry ref industry ( primary_id -&gt; id )' class='relName'>primary_id</text>
+<!-- ============= Fk 'blacklist_fk_blacklist' ============= -->
+<path id='blacklist_fk_blacklist'  onmouseover="hghl(['blacklist_fk_blacklist','sws.blacklist.user_id','sws.user.id'])" onmouseout="uhghl(['blacklist_fk_blacklist','sws.blacklist.user_id','sws.user.id'])" transform='translate(8,0)' class='scene' d='M 176 208 L 368,208' >
+	<title>Fk fk_blacklist
+blacklist ref user ( user_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 176 208 L 368,208' ></path>
+<text x='185' y='203' transform='rotate(0 185,203)' title='Fk fk_blacklist
+blacklist ref user ( user_id -&gt; id )' class='relName'>user_id</text>
+<!-- ============= Fk 'portfolio_fk_portfolio' ============= -->
+<path id='portfolio_fk_portfolio'  onmouseover="hghl(['portfolio_fk_portfolio','sws.portfolio.user_id','sws.user.id'])" onmouseout="uhghl(['portfolio_fk_portfolio','sws.portfolio.user_id','sws.user.id'])" transform='translate(8,0)' class='scene' d='M 304 560 L 408,560 Q 416,560 416,552 L 416,416' >
+	<title>Fk fk_portfolio
+portfolio ref user ( user_id -&gt; id )</title>
+</path>
+<path transform='translate(8,0)' marker-start='url(#foot0p)' marker-end='url(#arrow1)'    d='M 304 560 L 408,560 Q 416,560 416,552 L 416,416' ></path>
+<text x='313' y='555' transform='rotate(0 313,555)' title='Fk fk_portfolio
+portfolio ref user ( user_id -&gt; id )' class='relName'>user_id</text>
+<!-- ============= Table 'grid_subscription' ============= -->
+<rect class='table' x='48' y='328' width='112' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 356.00 L 48.00 336.00 Q 48.00 328.00 56.00 328.00 L 152.00 328.00 Q 160.00 328.00 160.00 336.00 L 160.00 356.00 L48.00 356.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='328' width='112' height='96' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='48.000000' y1='356.000000' x2='160.000000' y2='356.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='64.000000' y1='356.000000' x2='64.000000' y2='424.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='148.000000' y1='356.000000' x2='148.000000' y2='424.000000' style='stroke:#5f676e'/>
+<a xlink:href='#grid_subscription'><text x='53' y='348'>grid_subscription</text><title>Table sws.grid_subscription</title></a>
+  <use id='nn' x='50' y='365' xlink:href='#nn'/><a xlink:href='#grid_subscription.id'><use id='pk' x='50' y='364' xlink:href='#pk'/><title>Pk pk_grid_subscription ( id ) </title></a>
+<a xlink:href='#grid_subscription.id'><text id='sws.grid_subscription.id' x='67' y='375'>id</text><title>id
+* bigint</title></a>
+  <a xlink:href='#grid_subscription.grid_id'><use id='idx' x='50' y='380' xlink:href='#idx'/><title>idx_grid_subscription ( grid_id ) </title></a>
+<a xlink:href='#grid_subscription.grid_id'><text id='sws.grid_subscription.grid_id' x='67' y='391' onmouseover="hghl(['grid_subscription_fk_grid_subscription'])" onmouseout="uhghl(['grid_subscription_fk_grid_subscription'])">grid_id</text><title>grid_id
+bigint</title></a>
+<a xlink:href='#grid_subscription.grid_id'><use id='fk' x='148' y='380' xlink:href='#fk'/><title>References grid ( grid_id -&gt; id ) </title></a>
+  <a xlink:href='#grid_subscription.user_id'><use id='idx' x='50' y='396' xlink:href='#idx'/><title>idx_grid_subscription_0 ( user_id ) </title></a>
+<a xlink:href='#grid_subscription.user_id'><text id='sws.grid_subscription.user_id' x='67' y='407' onmouseover="hghl(['grid_subscription_fk_grid_subscription_0'])" onmouseout="uhghl(['grid_subscription_fk_grid_subscription_0'])">user_id</text><title>user_id
+bigint</title></a>
+<a xlink:href='#grid_subscription.user_id'><use id='fk' x='148' y='396' xlink:href='#fk'/><title>References user ( user_id -&gt; id ) </title></a>
+
+<!-- ============= Table 'user' ============= -->
+<rect class='table' x='384' y='200' width='112' height='208' rx='8' ry='8' style='stroke:none'/>
+<path d='M 384.00 228.00 L 384.00 208.00 Q 384.00 200.00 392.00 200.00 L 488.00 200.00 Q 496.00 200.00 496.00 208.00 L 496.00 228.00 L384.00 228.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='384' y='200' width='112' height='208' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='384.000000' y1='228.000000' x2='496.000000' y2='228.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='400.000000' y1='228.000000' x2='400.000000' y2='408.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='484.000000' y1='228.000000' x2='484.000000' y2='408.000000' style='stroke:#5f676e'/>
+<a xlink:href='#user'><text x='424' y='220'>user</text><title>Table sws.user</title></a>
+  <use id='nn' x='386' y='237' xlink:href='#nn'/><a xlink:href='#user.id'><use id='pk' x='386' y='236' xlink:href='#pk'/><title>Pk pk_user ( id ) </title></a>
+<a xlink:href='#user.id'><text id='sws.user.id' x='403' y='247' onmouseover="hghl(['blacklist_fk_blacklist','grid_fk_grid','grid_subscription_fk_grid_subscription_0','item_transactions_fk_item_transactions_0','portfolio_fk_portfolio'])" onmouseout="uhghl(['blacklist_fk_blacklist','grid_fk_grid','grid_subscription_fk_grid_subscription_0','item_transactions_fk_item_transactions_0','portfolio_fk_portfolio'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#user.id'><use id='ref' x='484' y='236' xlink:href='#ref'/><title>Referred by blacklist ( user_id -&gt; id ) 
+Referred by grid ( user_id -&gt; id ) 
+Referred by grid_subscription ( user_id -&gt; id ) 
+Referred by item_transactions ( user_id -&gt; id ) 
+Referred by portfolio ( user_id -&gt; id ) </title></a>
+  <use id='nn' x='386' y='253' xlink:href='#nn'/><a xlink:href='#user.name'><text id='sws.user.name' x='403' y='263'>name</text><title>name
+* varchar(100)</title></a>
+  <use id='nn' x='386' y='269' xlink:href='#nn'/><a xlink:href='#user.email'><text id='sws.user.email' x='403' y='279'>email</text><title>email
+* varchar(255)</title></a>
+  <use id='nn' x='386' y='285' xlink:href='#nn'/><a xlink:href='#user.given_name'><text id='sws.user.given_name' x='403' y='295'>given_name</text><title>given_name
+* varchar(100)</title></a>
+  <use id='nn' x='386' y='301' xlink:href='#nn'/><a xlink:href='#user.family_name'><text id='sws.user.family_name' x='403' y='311'>family_name</text><title>family_name
+* varchar(100)</title></a>
+  <a xlink:href='#user.picture'><text id='sws.user.picture' x='403' y='327'>picture</text><title>picture
+text</title></a>
+  <a xlink:href='#user.locale'><text id='sws.user.locale' x='403' y='343'>locale</text><title>locale
+varchar(100) default 'en'</title></a>
+  <a xlink:href='#user.register_date'><text id='sws.user.register_date' x='403' y='359'>register_date</text><title>register_date
+timestamp default CURRENT_TIMESTAMP</title></a>
+  <a xlink:href='#user.country_iso'><text id='sws.user.country_iso' x='403' y='375'>country_iso</text><title>country_iso
+varchar(10)</title></a>
+  <a xlink:href='#user.token'><text id='sws.user.token' x='403' y='391'>token</text><title>token
+varchar(100)</title></a>
+
+<!-- ============= Table 'grid' ============= -->
+<rect class='table' x='48' y='472' width='96' height='144' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 500.00 L 48.00 480.00 Q 48.00 472.00 56.00 472.00 L 136.00 472.00 Q 144.00 472.00 144.00 480.00 L 144.00 500.00 L48.00 500.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='472' width='96' height='144' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='48.000000' y1='500.000000' x2='144.000000' y2='500.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='64.000000' y1='500.000000' x2='64.000000' y2='616.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='132.000000' y1='500.000000' x2='132.000000' y2='616.000000' style='stroke:#5f676e'/>
+<a xlink:href='#grid'><text x='81' y='492'>grid</text><title>Table sws.grid</title></a>
+  <use id='nn' x='50' y='509' xlink:href='#nn'/><a xlink:href='#grid.id'><use id='pk' x='50' y='508' xlink:href='#pk'/><title>Pk pk_grid ( id ) </title></a>
+<a xlink:href='#grid.id'><text id='sws.grid.id' x='67' y='519' onmouseover="hghl(['grid_subscription_fk_grid_subscription'])" onmouseout="uhghl(['grid_subscription_fk_grid_subscription'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#grid.id'><use id='ref' x='132' y='508' xlink:href='#ref'/><title>Referred by grid_subscription ( grid_id -&gt; id ) </title></a>
+  <a xlink:href='#grid.user_id'><use id='idx' x='50' y='524' xlink:href='#idx'/><title>idx_grid ( user_id ) </title></a>
+<a xlink:href='#grid.user_id'><text id='sws.grid.user_id' x='67' y='535' onmouseover="hghl(['grid_fk_grid'])" onmouseout="uhghl(['grid_fk_grid'])">user_id</text><title>user_id
+bigint</title></a>
+<a xlink:href='#grid.user_id'><use id='fk' x='132' y='524' xlink:href='#fk'/><title>References user ( user_id -&gt; id ) </title></a>
+  <a xlink:href='#grid.name'><text id='sws.grid.name' x='67' y='551'>name</text><title>name
+varchar(100)</title></a>
+  <a xlink:href='#grid.rulejson'><text id='sws.grid.rulejson' x='67' y='567'>rulejson</text><title>rulejson
+json</title></a>
+  <a xlink:href='#grid.sharing'><text id='sws.grid.sharing' x='67' y='583'>sharing</text><title>sharing
+bit default 0</title></a>
+  <a xlink:href='#grid.description'><text id='sws.grid.description' x='67' y='599'>description</text><title>description
+text</title></a>
+
+<!-- ============= Table 'portfolio_items' ============= -->
+<rect class='table' x='368' y='600' width='96' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 368.00 628.00 L 368.00 608.00 Q 368.00 600.00 376.00 600.00 L 456.00 600.00 Q 464.00 600.00 464.00 608.00 L 464.00 628.00 L368.00 628.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='368' y='600' width='96' height='96' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='368.000000' y1='628.000000' x2='464.000000' y2='628.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='384.000000' y1='628.000000' x2='384.000000' y2='696.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='452.000000' y1='628.000000' x2='452.000000' y2='696.000000' style='stroke:#5f676e'/>
+<a xlink:href='#portfolio_items'><text x='371' y='620'>portfolio_items</text><title>Table sws.portfolio_items</title></a>
+  <use id='nn' x='370' y='637' xlink:href='#nn'/><a xlink:href='#portfolio_items.id'><use id='pk' x='370' y='636' xlink:href='#pk'/><title>Pk pk_portfolio_items ( id ) </title></a>
+<a xlink:href='#portfolio_items.id'><text id='sws.portfolio_items.id' x='387' y='647'>id</text><title>id
+* bigint</title></a>
+  <a xlink:href='#portfolio_items.portfolio_id'><use id='idx' x='370' y='652' xlink:href='#idx'/><title>idx_portfolio_items ( portfolio_id ) </title></a>
+<a xlink:href='#portfolio_items.portfolio_id'><text id='sws.portfolio_items.portfolio_id' x='387' y='663' onmouseover="hghl(['portfolio_items_fk_portfolio_items'])" onmouseout="uhghl(['portfolio_items_fk_portfolio_items'])">portfolio_id</text><title>portfolio_id
+bigint</title></a>
+<a xlink:href='#portfolio_items.portfolio_id'><use id='fk' x='452' y='652' xlink:href='#fk'/><title>References portfolio ( portfolio_id -&gt; id ) </title></a>
+  <a xlink:href='#portfolio_items.item_id'><use id='idx' x='370' y='668' xlink:href='#idx'/><title>idx_portfolio_items_0 ( item_id ) </title></a>
+<a xlink:href='#portfolio_items.item_id'><text id='sws.portfolio_items.item_id' x='387' y='679' onmouseover="hghl(['portfolio_items_fk_portfolio_items_0'])" onmouseout="uhghl(['portfolio_items_fk_portfolio_items_0'])">item_id</text><title>item_id
+bigint</title></a>
+<a xlink:href='#portfolio_items.item_id'><use id='fk' x='452' y='668' xlink:href='#fk'/><title>References company ( item_id -&gt; id ) </title></a>
+
+<!-- ============= Table 'item_transactions' ============= -->
+<rect class='table' x='480' y='440' width='128' height='160' rx='8' ry='8' style='stroke:none'/>
+<path d='M 480.00 468.00 L 480.00 448.00 Q 480.00 440.00 488.00 440.00 L 600.00 440.00 Q 608.00 440.00 608.00 448.00 L 608.00 468.00 L480.00 468.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='480' y='440' width='128' height='160' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='480.000000' y1='468.000000' x2='608.000000' y2='468.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='496.000000' y1='468.000000' x2='496.000000' y2='600.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='596.000000' y1='468.000000' x2='596.000000' y2='600.000000' style='stroke:#5f676e'/>
+<a xlink:href='#item_transactions'><text x='491' y='460'>item_transactions</text><title>Table sws.item_transactions</title></a>
+  <use id='nn' x='482' y='477' xlink:href='#nn'/><a xlink:href='#item_transactions.id'><use id='pk' x='482' y='476' xlink:href='#pk'/><title>Pk pk_item_transactions ( id ) </title></a>
+<a xlink:href='#item_transactions.id'><text id='sws.item_transactions.id' x='499' y='487'>id</text><title>id
+* bigint</title></a>
+  <a xlink:href='#item_transactions.user_id'><use id='idx' x='482' y='492' xlink:href='#idx'/><title>idx_item_transactions_0 ( user_id ) </title></a>
+<a xlink:href='#item_transactions.user_id'><text id='sws.item_transactions.user_id' x='499' y='503' onmouseover="hghl(['item_transactions_fk_item_transactions_0'])" onmouseout="uhghl(['item_transactions_fk_item_transactions_0'])">user_id</text><title>user_id
+bigint</title></a>
+<a xlink:href='#item_transactions.user_id'><use id='fk' x='596' y='492' xlink:href='#fk'/><title>References user ( user_id -&gt; id ) </title></a>
+  <a xlink:href='#item_transactions.item_id'><use id='idx' x='482' y='508' xlink:href='#idx'/><title>idx_item_transactions ( item_id ) </title></a>
+<a xlink:href='#item_transactions.item_id'><text id='sws.item_transactions.item_id' x='499' y='519' onmouseover="hghl(['item_transactions_fk_item_transactions'])" onmouseout="uhghl(['item_transactions_fk_item_transactions'])">item_id</text><title>item_id
+bigint</title></a>
+<a xlink:href='#item_transactions.item_id'><use id='fk' x='596' y='508' xlink:href='#fk'/><title>References company ( item_id -&gt; id ) </title></a>
+  <a xlink:href='#item_transactions.transaction_type'><text id='sws.item_transactions.transaction_type' x='499' y='535'>transaction_type</text><title>transaction_type
+varchar(10)</title></a>
+  <a xlink:href='#item_transactions.amount'><text id='sws.item_transactions.amount' x='499' y='551'>amount</text><title>amount
+bigint</title></a>
+  <a xlink:href='#item_transactions.purchase_date'><text id='sws.item_transactions.purchase_date' x='499' y='567'>purchase_date</text><title>purchase_date
+timestamp</title></a>
+  <a xlink:href='#item_transactions.cost'><text id='sws.item_transactions.cost' x='499' y='583'>cost</text><title>cost
+decimal(20,3)</title></a>
+
+<!-- ============= Table 'company' ============= -->
+<rect class='table' x='704' y='456' width='144' height='192' rx='8' ry='8' style='stroke:none'/>
+<path d='M 704.00 484.00 L 704.00 464.00 Q 704.00 456.00 712.00 456.00 L 840.00 456.00 Q 848.00 456.00 848.00 464.00 L 848.00 484.00 L704.00 484.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='704' y='456' width='144' height='192' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='704.000000' y1='484.000000' x2='848.000000' y2='484.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='720.000000' y1='484.000000' x2='720.000000' y2='648.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='836.000000' y1='484.000000' x2='836.000000' y2='648.000000' style='stroke:#5f676e'/>
+<a xlink:href='#company'><text x='748' y='476'>company</text><title>Table sws.company</title></a>
+  <use id='nn' x='706' y='493' xlink:href='#nn'/><a xlink:href='#company.id'><use id='pk' x='706' y='492' xlink:href='#pk'/><title>Pk pk_company ( id ) </title></a>
+<a xlink:href='#company.id'><text id='sws.company.id' x='723' y='503' onmouseover="hghl(['company_industry_fk_company_industry','company_info_fk_company_info','company_score_fk_company_score','item_transactions_fk_item_transactions','person_fk_person','portfolio_items_fk_portfolio_items_0'])" onmouseout="uhghl(['company_industry_fk_company_industry','company_info_fk_company_info','company_score_fk_company_score','item_transactions_fk_item_transactions','person_fk_person','portfolio_items_fk_portfolio_items_0'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#company.id'><use id='ref' x='836' y='492' xlink:href='#ref'/><title>Referred by company_industry ( company_id -&gt; id ) 
+Referred by company_info ( company_id -&gt; id ) 
+Referred by company_score ( company_id -&gt; id ) 
+Referred by item_transactions ( item_id -&gt; id ) 
+Referred by person ( company_id -&gt; id ) 
+Referred by portfolio_items ( item_id -&gt; id ) </title></a>
+  <use id='nn' x='706' y='509' xlink:href='#nn'/><a xlink:href='#company.trading_item_id'><text id='sws.company.trading_item_id' x='723' y='519'>trading_item_id</text><title>trading_item_id
+* bigint</title></a>
+  <use id='nn' x='706' y='525' xlink:href='#nn'/><a xlink:href='#company.name'><text id='sws.company.name' x='723' y='535'>name</text><title>name
+* varchar(100)</title></a>
+  <use id='nn' x='706' y='541' xlink:href='#nn'/><a xlink:href='#company.slug'><text id='sws.company.slug' x='723' y='551'>slug</text><title>slug
+* varchar(100)</title></a>
+  <use id='nn' x='706' y='557' xlink:href='#nn'/><a xlink:href='#company.exchange_symbol'><text id='sws.company.exchange_symbol' x='723' y='567'>exchange_symbol</text><title>exchange_symbol
+* varchar(100)</title></a>
+  <use id='nn' x='706' y='573' xlink:href='#nn'/><a xlink:href='#company.ticker_symbol'><text id='sws.company.ticker_symbol' x='723' y='583'>ticker_symbol</text><title>ticker_symbol
+* varchar(100)</title></a>
+  <use id='nn' x='706' y='589' xlink:href='#nn'/><a xlink:href='#company.unique_symbol'><text id='sws.company.unique_symbol' x='723' y='599'>unique_symbol</text><title>unique_symbol
+* varchar(100)</title></a>
+  <a xlink:href='#company.primary_ticker'><text id='sws.company.primary_ticker' x='723' y='615'>primary_ticker</text><title>primary_ticker
+bit default 0</title></a>
+  <a xlink:href='#company.last_updated'><text id='sws.company.last_updated' x='723' y='631'>last_updated</text><title>last_updated
+timestamp</title></a>
+
+<!-- ============= Table 'company_score' ============= -->
+<rect class='table' x='944' y='456' width='112' height='176' rx='8' ry='8' style='stroke:none'/>
+<path d='M 944.00 484.00 L 944.00 464.00 Q 944.00 456.00 952.00 456.00 L 1048.00 456.00 Q 1056.00 456.00 1056.00 464.00 L 1056.00 484.00 L944.00 484.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='944' y='456' width='112' height='176' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='944.000000' y1='484.000000' x2='1056.000000' y2='484.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='960.000000' y1='484.000000' x2='960.000000' y2='632.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='1044.000000' y1='484.000000' x2='1044.000000' y2='632.000000' style='stroke:#5f676e'/>
+<a xlink:href='#company_score'><text x='954' y='476'>company_score</text><title>Table sws.company_score</title></a>
+  <use id='nn' x='946' y='493' xlink:href='#nn'/><a xlink:href='#company_score.id'><use id='pk' x='946' y='492' xlink:href='#pk'/><title>Pk pk_company_score ( id ) </title></a>
+<a xlink:href='#company_score.id'><text id='sws.company_score.id' x='963' y='503'>id</text><title>id
+* bigint</title></a>
+  <a xlink:href='#company_score.company_id'><use id='idx' x='946' y='508' xlink:href='#idx'/><title>idx_company_score ( company_id ) </title></a>
+<a xlink:href='#company_score.company_id'><text id='sws.company_score.company_id' x='963' y='519' onmouseover="hghl(['company_score_fk_company_score'])" onmouseout="uhghl(['company_score_fk_company_score'])">company_id</text><title>company_id
+bigint</title></a>
+<a xlink:href='#company_score.company_id'><use id='fk' x='1044' y='508' xlink:href='#fk'/><title>References company ( company_id -&gt; id ) </title></a>
+  <a xlink:href='#company_score.value'><text id='sws.company_score.value' x='963' y='535'>value</text><title>value
+int</title></a>
+  <a xlink:href='#company_score.income'><text id='sws.company_score.income' x='963' y='551'>income</text><title>income
+int</title></a>
+  <a xlink:href='#company_score.health'><text id='sws.company_score.health' x='963' y='567'>health</text><title>health
+int</title></a>
+  <a xlink:href='#company_score.past'><text id='sws.company_score.past' x='963' y='583'>past</text><title>past
+int</title></a>
+  <a xlink:href='#company_score.future'><text id='sws.company_score.future' x='963' y='599'>future</text><title>future
+int</title></a>
+  <a xlink:href='#company_score.total'><text id='sws.company_score.total' x='963' y='615'>total</text><title>total
+int</title></a>
+
+<!-- ============= Table 'person' ============= -->
+<rect class='table' x='512' y='104' width='160' height='208' rx='8' ry='8' style='stroke:none'/>
+<path d='M 512.00 132.00 L 512.00 112.00 Q 512.00 104.00 520.00 104.00 L 664.00 104.00 Q 672.00 104.00 672.00 112.00 L 672.00 132.00 L512.00 132.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='512' y='104' width='160' height='208' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='512.000000' y1='132.000000' x2='672.000000' y2='132.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='528.000000' y1='132.000000' x2='528.000000' y2='312.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='660.000000' y1='132.000000' x2='660.000000' y2='312.000000' style='stroke:#5f676e'/>
+<a xlink:href='#person'><text x='569' y='124'>person</text><title>Table sws.person</title></a>
+  <use id='nn' x='514' y='141' xlink:href='#nn'/><a xlink:href='#person.id'><use id='pk' x='514' y='140' xlink:href='#pk'/><title>Pk pk_person ( id ) </title></a>
+<a xlink:href='#person.id'><text id='sws.person.id' x='531' y='151' onmouseover="hghl(['company_info_fk_company_info_0'])" onmouseout="uhghl(['company_info_fk_company_info_0'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#person.id'><use id='ref' x='660' y='140' xlink:href='#ref'/><title>Referred by company_info ( ceo_person_id -&gt; id ) </title></a>
+  <a xlink:href='#person.company_id'><use id='idx' x='514' y='156' xlink:href='#idx'/><title>idx_person ( company_id ) </title></a>
+<a xlink:href='#person.company_id'><text id='sws.person.company_id' x='531' y='167' onmouseover="hghl(['person_fk_person'])" onmouseout="uhghl(['person_fk_person'])">company_id</text><title>company_id
+bigint</title></a>
+<a xlink:href='#person.company_id'><use id='fk' x='660' y='156' xlink:href='#fk'/><title>References company ( company_id -&gt; id ) </title></a>
+  <a xlink:href='#person.is_ceo'><text id='sws.person.is_ceo' x='531' y='183'>is_ceo</text><title>is_ceo
+bit</title></a>
+  <a xlink:href='#person.is_boardmember'><text id='sws.person.is_boardmember' x='531' y='199'>is_boardmember</text><title>is_boardmember
+bit</title></a>
+  <a xlink:href='#person.name'><text id='sws.person.name' x='531' y='215'>name</text><title>name
+varchar(100)</title></a>
+  <a xlink:href='#person.title'><text id='sws.person.title' x='531' y='231'>title</text><title>title
+text</title></a>
+  <a xlink:href='#person.compensation'><text id='sws.person.compensation' x='531' y='247'>compensation</text><title>compensation
+bigint</title></a>
+  <a xlink:href='#person.compensationfriendly'><text id='sws.person.compensationfriendly' x='531' y='263'>compensationfriendly</text><title>compensationfriendly
+varchar(50)</title></a>
+  <a xlink:href='#person.age'><text id='sws.person.age' x='531' y='279'>age</text><title>age
+int</title></a>
+  <a xlink:href='#person.biography'><text id='sws.person.biography' x='531' y='295'>biography</text><title>biography
+longtext</title></a>
+
+<!-- ============= Table 'company_info' ============= -->
+<rect class='table' x='752' y='40' width='160' height='336' rx='8' ry='8' style='stroke:none'/>
+<path d='M 752.00 68.00 L 752.00 48.00 Q 752.00 40.00 760.00 40.00 L 904.00 40.00 Q 912.00 40.00 912.00 48.00 L 912.00 68.00 L752.00 68.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='752' y='40' width='160' height='336' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='752.000000' y1='68.000000' x2='912.000000' y2='68.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='768.000000' y1='68.000000' x2='768.000000' y2='376.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='900.000000' y1='68.000000' x2='900.000000' y2='376.000000' style='stroke:#5f676e'/>
+<a xlink:href='#company_info'><text x='791' y='60'>company_info</text><title>Table sws.company_info</title></a>
+  <use id='nn' x='754' y='77' xlink:href='#nn'/><a xlink:href='#company_info.id'><use id='pk' x='754' y='76' xlink:href='#pk'/><title>Pk pk_company_info ( id ) </title></a>
+<a xlink:href='#company_info.id'><text id='sws.company_info.id' x='771' y='87'>id</text><title>id
+* bigint</title></a>
+  <a xlink:href='#company_info.company_id'><use id='idx' x='754' y='92' xlink:href='#idx'/><title>idx_company_info ( company_id ) </title></a>
+<a xlink:href='#company_info.company_id'><text id='sws.company_info.company_id' x='771' y='103' onmouseover="hghl(['company_info_fk_company_info'])" onmouseout="uhghl(['company_info_fk_company_info'])">company_id</text><title>company_id
+bigint</title></a>
+<a xlink:href='#company_info.company_id'><use id='fk' x='900' y='92' xlink:href='#fk'/><title>References company ( company_id -&gt; id ) </title></a>
+  <a xlink:href='#company_info.description'><text id='sws.company_info.description' x='771' y='119'>description</text><title>description
+text</title></a>
+  <a xlink:href='#company_info.warning_type'><text id='sws.company_info.warning_type' x='771' y='135'>warning_type</text><title>warning_type
+int</title></a>
+  <a xlink:href='#company_info.company_industry_id'><use id='idx' x='754' y='140' xlink:href='#idx'/><title>idx_company_info_1 ( company_industry_id ) </title></a>
+<a xlink:href='#company_info.company_industry_id'><text id='sws.company_info.company_industry_id' x='771' y='151' onmouseover="hghl(['company_info_fk_company_info_1'])" onmouseout="uhghl(['company_info_fk_company_info_1'])">company_industry_id</text><title>company_industry_id
+bigint</title></a>
+<a xlink:href='#company_info.company_industry_id'><use id='fk' x='900' y='140' xlink:href='#fk'/><title>References company_industry ( company_industry_id -&gt; id ) </title></a>
+  <a xlink:href='#company_info.fund'><text id='sws.company_info.fund' x='771' y='167'>fund</text><title>fund
+bit default 0</title></a>
+  <a xlink:href='#company_info.status'><text id='sws.company_info.status' x='771' y='183'>status</text><title>status
+varchar(100)</title></a>
+  <a xlink:href='#company_info.currency'><text id='sws.company_info.currency' x='771' y='199'>currency</text><title>currency
+varchar(10)</title></a>
+  <a xlink:href='#company_info.country'><text id='sws.company_info.country' x='771' y='215'>country</text><title>country
+varchar(10)</title></a>
+  <a xlink:href='#company_info.employees'><text id='sws.company_info.employees' x='771' y='231'>employees</text><title>employees
+int</title></a>
+  <a xlink:href='#company_info.address'><text id='sws.company_info.address' x='771' y='247'>address</text><title>address
+text</title></a>
+  <a xlink:href='#company_info.year_founded'><text id='sws.company_info.year_founded' x='771' y='263'>year_founded</text><title>year_founded
+int</title></a>
+  <a xlink:href='#company_info.url'><text id='sws.company_info.url' x='771' y='279'>url</text><title>url
+text</title></a>
+  <a xlink:href='#company_info.logo_url'><text id='sws.company_info.logo_url' x='771' y='295'>logo_url</text><title>logo_url
+text</title></a>
+  <a xlink:href='#company_info.cover_url'><text id='sws.company_info.cover_url' x='771' y='311'>cover_url</text><title>cover_url
+text</title></a>
+  <a xlink:href='#company_info.cover_small_url'><text id='sws.company_info.cover_small_url' x='771' y='327'>cover_small_url</text><title>cover_small_url
+text</title></a>
+  <a xlink:href='#company_info.ceo_person_id'><use id='idx' x='754' y='332' xlink:href='#idx'/><title>idx_company_info_0 ( ceo_person_id ) </title></a>
+<a xlink:href='#company_info.ceo_person_id'><text id='sws.company_info.ceo_person_id' x='771' y='343' onmouseover="hghl(['company_info_fk_company_info_0'])" onmouseout="uhghl(['company_info_fk_company_info_0'])">ceo_person_id</text><title>ceo_person_id
+bigint</title></a>
+<a xlink:href='#company_info.ceo_person_id'><use id='fk' x='900' y='332' xlink:href='#fk'/><title>References person ( ceo_person_id -&gt; id ) </title></a>
+  <a xlink:href='#company_info.legal_name'><text id='sws.company_info.legal_name' x='771' y='359'>legal_name</text><title>legal_name
+text</title></a>
+
+<!-- ============= Table 'industry' ============= -->
+<rect class='table' x='1024' y='40' width='64' height='80' rx='8' ry='8' style='stroke:none'/>
+<path d='M 1024.00 68.00 L 1024.00 48.00 Q 1024.00 40.00 1032.00 40.00 L 1080.00 40.00 Q 1088.00 40.00 1088.00 48.00 L 1088.00 68.00 L1024.00 68.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='1024' y='40' width='64' height='80' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='1024.000000' y1='68.000000' x2='1088.000000' y2='68.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='1040.000000' y1='68.000000' x2='1040.000000' y2='120.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='1076.000000' y1='68.000000' x2='1076.000000' y2='120.000000' style='stroke:#5f676e'/>
+<a xlink:href='#industry'><text x='1029' y='60'>industry</text><title>Table sws.industry</title></a>
+  <use id='nn' x='1026' y='77' xlink:href='#nn'/><a xlink:href='#industry.id'><use id='pk' x='1026' y='76' xlink:href='#pk'/><title>Pk pk_industry ( id ) </title></a>
+<a xlink:href='#industry.id'><text id='sws.industry.id' x='1043' y='87' onmouseover="hghl(['company_industry_fk_company_industry_0'])" onmouseout="uhghl(['company_industry_fk_company_industry_0'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#industry.id'><use id='ref' x='1076' y='76' xlink:href='#ref'/><title>Referred by company_industry ( primary_id -&gt; id ) </title></a>
+  <a xlink:href='#industry.name'><text id='sws.industry.name' x='1043' y='103'>name</text><title>name
+varchar(100)</title></a>
+
+<!-- ============= Table 'company_industry' ============= -->
+<rect class='table' x='1024' y='296' width='112' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 1024.00 324.00 L 1024.00 304.00 Q 1024.00 296.00 1032.00 296.00 L 1128.00 296.00 Q 1136.00 296.00 1136.00 304.00 L 1136.00 324.00 L1024.00 324.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='1024' y='296' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='1024.000000' y1='324.000000' x2='1136.000000' y2='324.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='1040.000000' y1='324.000000' x2='1040.000000' y2='424.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='1124.000000' y1='324.000000' x2='1124.000000' y2='424.000000' style='stroke:#5f676e'/>
+<a xlink:href='#company_industry'><text x='1026' y='316'>company_industry</text><title>Table sws.company_industry</title></a>
+  <use id='nn' x='1026' y='333' xlink:href='#nn'/><a xlink:href='#company_industry.id'><use id='pk' x='1026' y='332' xlink:href='#pk'/><title>Pk pk_company_industry ( id ) </title></a>
+<a xlink:href='#company_industry.id'><text id='sws.company_industry.id' x='1043' y='343' onmouseover="hghl(['company_info_fk_company_info_1'])" onmouseout="uhghl(['company_info_fk_company_info_1'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#company_industry.id'><use id='ref' x='1124' y='332' xlink:href='#ref'/><title>Referred by company_info ( company_industry_id -&gt; id ) </title></a>
+  <a xlink:href='#company_industry.company_id'><use id='idx' x='1026' y='348' xlink:href='#idx'/><title>idx_company_industry ( company_id ) </title></a>
+<a xlink:href='#company_industry.company_id'><text id='sws.company_industry.company_id' x='1043' y='359' onmouseover="hghl(['company_industry_fk_company_industry'])" onmouseout="uhghl(['company_industry_fk_company_industry'])">company_id</text><title>company_id
+bigint</title></a>
+<a xlink:href='#company_industry.company_id'><use id='fk' x='1124' y='348' xlink:href='#fk'/><title>References company ( company_id -&gt; id ) </title></a>
+  <a xlink:href='#company_industry.primary_id'><use id='idx' x='1026' y='364' xlink:href='#idx'/><title>idx_company_industry_0 ( primary_id ) </title></a>
+<a xlink:href='#company_industry.primary_id'><text id='sws.company_industry.primary_id' x='1043' y='375' onmouseover="hghl(['company_industry_fk_company_industry_0'])" onmouseout="uhghl(['company_industry_fk_company_industry_0'])">primary_id</text><title>primary_id
+bigint</title></a>
+<a xlink:href='#company_industry.primary_id'><use id='fk' x='1124' y='364' xlink:href='#fk'/><title>References industry ( primary_id -&gt; id ) </title></a>
+  <a xlink:href='#company_industry.secondary_id'><use id='idx' x='1026' y='380' xlink:href='#idx'/><title>idx_company_industry_1 ( secondary_id ) </title></a>
+<a xlink:href='#company_industry.secondary_id'><text id='sws.company_industry.secondary_id' x='1043' y='391'>secondary_id</text><title>secondary_id
+bigint</title></a>
+  <a xlink:href='#company_industry.tertiary_id'><use id='idx' x='1026' y='396' xlink:href='#idx'/><title>idx_company_industry_2 ( tertiary_id ) </title></a>
+<a xlink:href='#company_industry.tertiary_id'><text id='sws.company_industry.tertiary_id' x='1043' y='407'>tertiary_id</text><title>tertiary_id
+bigint</title></a>
+
+<!-- ============= Table 'blacklist' ============= -->
+<rect class='table' x='48' y='184' width='128' height='96' rx='8' ry='8' style='stroke:none'/>
+<path d='M 48.00 212.00 L 48.00 192.00 Q 48.00 184.00 56.00 184.00 L 168.00 184.00 Q 176.00 184.00 176.00 192.00 L 176.00 212.00 L48.00 212.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='48' y='184' width='128' height='96' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='48.000000' y1='212.000000' x2='176.000000' y2='212.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='64.000000' y1='212.000000' x2='64.000000' y2='280.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='164.000000' y1='212.000000' x2='164.000000' y2='280.000000' style='stroke:#5f676e'/>
+<a xlink:href='#blacklist'><text x='85' y='204'>blacklist</text><title>Table sws.blacklist</title></a>
+  <use id='nn' x='50' y='221' xlink:href='#nn'/><a xlink:href='#blacklist.id'><use id='pk' x='50' y='220' xlink:href='#pk'/><title>Pk pk_blacklist ( id ) </title></a>
+<a xlink:href='#blacklist.id'><text id='sws.blacklist.id' x='67' y='231'>id</text><title>id
+* int</title></a>
+  <a xlink:href='#blacklist.user_id'><use id='idx' x='50' y='236' xlink:href='#idx'/><title>idx_blacklist ( user_id ) </title></a>
+<a xlink:href='#blacklist.user_id'><text id='sws.blacklist.user_id' x='67' y='247' onmouseover="hghl(['blacklist_fk_blacklist'])" onmouseout="uhghl(['blacklist_fk_blacklist'])">user_id</text><title>user_id
+bigint</title></a>
+<a xlink:href='#blacklist.user_id'><use id='fk' x='164' y='236' xlink:href='#fk'/><title>References user ( user_id -&gt; id ) </title></a>
+  <use id='nn' x='50' y='253' xlink:href='#nn'/><a xlink:href='#blacklist.unique_symbol'><text id='sws.blacklist.unique_symbol' x='67' y='263'>unique_symbol</text><title>unique_symbol
+* varchar(100)</title></a>
+
+<!-- ============= Table 'portfolio' ============= -->
+<rect class='table' x='192' y='536' width='112' height='128' rx='8' ry='8' style='stroke:none'/>
+<path d='M 192.00 564.00 L 192.00 544.00 Q 192.00 536.00 200.00 536.00 L 296.00 536.00 Q 304.00 536.00 304.00 544.00 L 304.00 564.00 L192.00 564.00 ' style='fill:url(#tbg_1f5182);stroke:1;stroke-opacity:0.1;' />
+<rect class='table' x='192' y='536' width='112' height='128' rx='8' ry='8' style='fill:none;stroke:#5f676e'/>
+<line class='delim' x1='192.000000' y1='564.000000' x2='304.000000' y2='564.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='208.000000' y1='564.000000' x2='208.000000' y2='664.000000' style='stroke:#5f676e'/>
+<line class='delim' x1='292.000000' y1='564.000000' x2='292.000000' y2='664.000000' style='stroke:#5f676e'/>
+<a xlink:href='#portfolio'><text x='221' y='556'>portfolio</text><title>Table sws.portfolio</title></a>
+  <use id='nn' x='194' y='573' xlink:href='#nn'/><a xlink:href='#portfolio.id'><use id='pk' x='194' y='572' xlink:href='#pk'/><title>Pk pk_portfolio ( id ) </title></a>
+<a xlink:href='#portfolio.id'><text id='sws.portfolio.id' x='211' y='583' onmouseover="hghl(['portfolio_items_fk_portfolio_items'])" onmouseout="uhghl(['portfolio_items_fk_portfolio_items'])">id</text><title>id
+* bigint</title></a>
+<a xlink:href='#portfolio.id'><use id='ref' x='292' y='572' xlink:href='#ref'/><title>Referred by portfolio_items ( portfolio_id -&gt; id ) </title></a>
+  <a xlink:href='#portfolio.user_id'><use id='idx' x='194' y='588' xlink:href='#idx'/><title>idx_portfolio ( user_id ) </title></a>
+<a xlink:href='#portfolio.user_id'><text id='sws.portfolio.user_id' x='211' y='599' onmouseover="hghl(['portfolio_fk_portfolio'])" onmouseout="uhghl(['portfolio_fk_portfolio'])">user_id</text><title>user_id
+bigint</title></a>
+<a xlink:href='#portfolio.user_id'><use id='fk' x='292' y='588' xlink:href='#fk'/><title>References user ( user_id -&gt; id ) </title></a>
+  <a xlink:href='#portfolio.name'><use id='unq' x='194' y='604' xlink:href='#unq'/><title>Unq idx_portfolio_name ( name ) </title></a>
+<a xlink:href='#portfolio.name'><text id='sws.portfolio.name' x='211' y='615'>name</text><title>name
+varchar(100)</title></a>
+  <a xlink:href='#portfolio.currency_iso'><text id='sws.portfolio.currency_iso' x='211' y='631'>currency_iso</text><title>currency_iso
+varchar(10)</title></a>
+  <a xlink:href='#portfolio.sharing'><text id='sws.portfolio.sharing' x='211' y='647'>sharing</text><title>sharing
+bit default 1</title></a>
+
+</g></svg></div>
+
+
+<br/><br/>
+<div class='section-header'><a name='grid_subscription'><h2>Table grid_subscription</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='grid_subscription.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='grid_subscription.grid_id'>grid&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='grid_subscription.user_id'>user&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;grid&#95;subscription</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;grid&#95;subscription</td>
+		<td> ON grid&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;grid&#95;subscription&#95;0</td>
+		<td> ON user&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_grid_subscription</td>
+		<td > ( grid&#95;id ) ref <a href='#grid'>grid</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_grid_subscription_0</td>
+		<td > ( user&#95;id ) ref <a href='#user'>user</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='user'><h2>Table user</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='user.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='user.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='user.email'>email</a></td>
+		<td> varchar&#40; 255 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='user.given_name'>given&#95;name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='user.family_name'>family&#95;name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='user.picture'>picture</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='user.locale'>locale</a></td>
+		<td> varchar&#40; 100 &#41;   DEFAULT 'en' </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='user.register_date'>register&#95;date</a></td>
+		<td> timestamp   DEFAULT CURRENT_TIMESTAMP </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='user.country_iso'>country&#95;iso</a></td>
+		<td> varchar&#40; 10 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='user.token'>token</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;user</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='grid'><h2>Table grid</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='grid.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='grid.user_id'>user&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='grid.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='grid.rulejson'>rulejson</a></td>
+		<td> json   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='grid.sharing'>sharing</a></td>
+		<td> bit   DEFAULT 0 </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='grid.description'>description</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;grid</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;grid</td>
+		<td> ON user&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_grid</td>
+		<td > ( user&#95;id ) ref <a href='#user'>user</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='portfolio_items'><h2>Table portfolio_items</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='portfolio_items.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='portfolio_items.portfolio_id'>portfolio&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='portfolio_items.item_id'>item&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;portfolio&#95;items</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;portfolio&#95;items</td>
+		<td> ON portfolio&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;portfolio&#95;items&#95;0</td>
+		<td> ON item&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_portfolio_items</td>
+		<td > ( portfolio&#95;id ) ref <a href='#portfolio'>portfolio</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_portfolio_items_0</td>
+		<td > ( item&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='item_transactions'><h2>Table item_transactions</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='item_transactions.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='item_transactions.user_id'>user&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='item_transactions.item_id'>item&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='item_transactions.transaction_type'>transaction&#95;type</a></td>
+		<td> varchar&#40; 10 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='item_transactions.amount'>amount</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='item_transactions.purchase_date'>purchase&#95;date</a></td>
+		<td> timestamp   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='item_transactions.cost'>cost</a></td>
+		<td> decimal&#40; 20&#44; 3 &#41; UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;item&#95;transactions</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;item&#95;transactions</td>
+		<td> ON item&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;item&#95;transactions&#95;0</td>
+		<td> ON user&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_item_transactions</td>
+		<td > ( item&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_item_transactions_0</td>
+		<td > ( user&#95;id ) ref <a href='#user'>user</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='company'><h2>Table company</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='company.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.trading_item_id'>trading&#95;item&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.slug'>slug</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.exchange_symbol'>exchange&#95;symbol</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.ticker_symbol'>ticker&#95;symbol</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='company.unique_symbol'>unique&#95;symbol</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company.primary_ticker'>primary&#95;ticker</a></td>
+		<td> bit   DEFAULT 0 </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company.last_updated'>last&#95;updated</a></td>
+		<td> timestamp   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;company</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='company_score'><h2>Table company_score</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='company_score.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_score.company_id'>company&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.value'>value</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.income'>income</a></td>
+		<td> int UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.health'>health</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.past'>past</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.future'>future</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_score.total'>total</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;company&#95;score</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;score</td>
+		<td> ON company&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_score</td>
+		<td > ( company&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='person'><h2>Table person</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='person.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='person.company_id'>company&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.is_ceo'>is&#95;ceo</a></td>
+		<td> bit   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.is_boardmember'>is&#95;boardmember</a></td>
+		<td> bit   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.title'>title</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.compensation'>compensation</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.compensationfriendly'>compensationfriendly</a></td>
+		<td> varchar&#40; 50 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.age'>age</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='person.biography'>biography</a></td>
+		<td> longtext   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;person</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;person</td>
+		<td> ON company&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_person</td>
+		<td > ( company&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='company_info'><h2>Table company_info</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='company_info.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_info.company_id'>company&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.description'>description</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.warning_type'>warning&#95;type</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_info.company_industry_id'>company&#95;industry&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.fund'>fund</a></td>
+		<td> bit   DEFAULT 0 </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.status'>status</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.currency'>currency</a></td>
+		<td> varchar&#40; 10 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.country'>country</a></td>
+		<td> varchar&#40; 10 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.employees'>employees</a></td>
+		<td> int UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.address'>address</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.year_founded'>year&#95;founded</a></td>
+		<td> int   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.url'>url</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.logo_url'>logo&#95;url</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.cover_url'>cover&#95;url</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.cover_small_url'>cover&#95;small&#95;url</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_info.ceo_person_id'>ceo&#95;person&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='company_info.legal_name'>legal&#95;name</a></td>
+		<td> text   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;company&#95;info</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;info</td>
+		<td> ON company&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;info&#95;0</td>
+		<td> ON ceo&#95;person&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;info&#95;1</td>
+		<td> ON company&#95;industry&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_info</td>
+		<td > ( company&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_info_0</td>
+		<td > ( ceo&#95;person&#95;id ) ref <a href='#person'>person</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_info_1</td>
+		<td > ( company&#95;industry&#95;id ) ref <a href='#company&#95;industry'>company&#95;industry</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='industry'><h2>Table industry</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='industry.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='industry.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;industry</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='company_industry'><h2>Table company_industry</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='company_industry.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_industry.company_id'>company&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='company_industry.primary_id'>primary&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td>
+		<td><a name='company_industry.secondary_id'>secondary&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td>
+		<td><a name='company_industry.tertiary_id'>tertiary&#95;id</a></td>
+		<td> bigint   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;company&#95;industry</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;industry</td>
+		<td> ON company&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;industry&#95;0</td>
+		<td> ON primary&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;industry&#95;1</td>
+		<td> ON secondary&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;company&#95;industry&#95;2</td>
+		<td> ON tertiary&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_industry</td>
+		<td > ( company&#95;id ) ref <a href='#company'>company</a> (id) </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_company_industry_0</td>
+		<td > ( primary&#95;id ) ref <a href='#industry'>industry</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='blacklist'><h2>Table blacklist</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg></td>
+		<td><a name='blacklist.id'>id</a></td>
+		<td> int  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='blacklist.user_id'>user&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>*</td>
+		<td><a name='blacklist.unique_symbol'>unique&#95;symbol</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;blacklist</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;blacklist</td>
+		<td> ON user&#95;id</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_blacklist</td>
+		<td > ( user&#95;id ) ref <a href='#user'>user</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<br/><br/>
+<div class='section-header'><a name='portfolio'><h2>Table portfolio</h2></a></div>
+<table class='bordered'>
+<thead>
+<tr><th colspan='4'>Columns</a></th></tr>
+</thead>
+<tbody>
+	<tr>
+		<td>*<svg width='14' height='14'><use xlink:href='#pk'/></svg><svg width='14' height='14'><use xlink:href='#ref'/></svg></td>
+		<td><a name='portfolio.id'>id</a></td>
+		<td> bigint UNSIGNED  AUTOINCREMENT  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg><svg width='14' height='14'><use xlink:href='#fk'/></svg></td>
+		<td><a name='portfolio.user_id'>user&#95;id</a></td>
+		<td> bigint UNSIGNED   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td>
+		<td><a name='portfolio.name'>name</a></td>
+		<td> varchar&#40; 100 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='portfolio.currency_iso'>currency&#95;iso</a></td>
+		<td> varchar&#40; 10 &#41;   </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><a name='portfolio.sharing'>sharing</a></td>
+		<td> bit   DEFAULT 1 </td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Indexes</th></tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#pk'/></svg></td><td>pk&#95;portfolio</td>
+		<td> ON id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#idx'/></svg></td><td>idx&#95;portfolio</td>
+		<td> ON user&#95;id</td>
+		<td>  </td>
+	</tr>
+	<tr>		<td><svg width='14' height='14'><use xlink:href='#unq'/></svg></td><td>idx&#95;portfolio&#95;name</td>
+		<td> ON name</td>
+		<td>  </td>
+	</tr>
+<tr><th colspan='4'>Foreign Keys</th></tr>
+	<tr>
+		<td><svg width='14' height='14'><use xlink:href='#fk'/></svg></td><td>fk_portfolio</td>
+		<td > ( user&#95;id ) ref <a href='#user'>user</a> (id) </td>
+		<td>  </td>
+	</tr>
+</tbody>
+</table>
+
+<p align='right'><a href='http://www.dbschema.com' style='color:#aaa'>Powered by DbSchema</a></p></body></html>
