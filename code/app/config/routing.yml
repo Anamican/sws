@@ -1,0 +1,11 @@
+app_api:
+    resource: "@AppBundle/Controller/Api"
+    type:     annotation
+    defaults:
+        _format: json
+
+app_oauth:
+    resource: "@AppBundle/Controller/OAuth"
+    type:     annotation
+    defaults:
+        _format: json

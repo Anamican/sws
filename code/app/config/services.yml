@@ -1,0 +1,24 @@
+parameters:
+#    parameter_name: value
+
+services:
+
+    api_exception_subscriber:
+        class: AppBundle\EventListener\ApiExceptionSubscriber
+        arguments: ['%kernel.debug%', '@logger']
+        tags:
+            - { name: kernel.event_subscriber }
+
+    api_request_subscriber:
+          class: AppBundle\EventListener\ApiRequestSubscriber
+          arguments: [ '@oauth2.server', '@oauth2.request', '@oauth2.response',  '@doctrine.orm.entity_manager', '%kernel.debug%']
+          tags:
+              - { name: kernel.event_subscriber }
+
+
+
+    link_serialization_subscriber:
+        class: AppBundle\Serializer\LinkSerializationSubscriber
+        arguments: ['@router', '@annotation_reader']
+        tags:
+            - { name: jms_serializer.event_subscriber }

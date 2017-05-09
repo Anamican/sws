@@ -1,0 +1,16 @@
+{
+  "name": "SWS",
+  "version": "0.1.0",
+  "description": "",
+  "title": "SWS",
+  "url" : "http://localhost:8000",
+  "sampleUrl": "http://localhost:8000",
+  "header": {
+    "title": "API Navigation",
+    "content": ""
+  },
+  "footer": {
+    "title": "",
+    "filename": ""
+  }
+}

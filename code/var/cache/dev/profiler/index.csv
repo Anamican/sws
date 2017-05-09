@@ -1,0 +1,13 @@
+4f1166,127.0.0.1,POST,http://localhost:8000/api/user/register,1494309503,,201
+275f77,127.0.0.1,POST,http://localhost:8000/api/user/company/blacklist,1494309927,,401
+d786d3,127.0.0.1,POST,http://localhost:8000/api/user/register,1494310326,,422
+0e566d,127.0.0.1,POST,http://localhost:8000/oauth/token/info,1494311770,,401
+f26d96,127.0.0.1,POST,http://localhost:8000/oauth/token,1494311776,,200
+dbd06b,127.0.0.1,POST,http://localhost:8000/oauth/token/info,1494311783,,200
+0bc94c,127.0.0.1,POST,http://localhost:8000/api/user/company/blacklist,1494312638,,401
+f34810,127.0.0.1,POST,http://localhost:8000/api/user/company/blacklist,1494312654,,201
+0f2c95,127.0.0.1,GET,http://localhost:8000/api/company/NYSE:ROP,1494315619,,401
+df212a,127.0.0.1,POST,http://localhost:8000/oauth/token,1494315624,,200
+cfd229,127.0.0.1,GET,http://localhost:8000/api/company/NYSE:ROP,1494315630,,200
+b5a388,127.0.0.1,POST,http://localhost:8000/api/user/portfolio,1494316168,,201
+d36b91,127.0.0.1,POST,http://localhost:8000/oauth/token,1494317236,,200
