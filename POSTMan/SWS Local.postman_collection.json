@@ -1,0 +1,415 @@
+{
+	"variables": [],
+	"info": {
+		"name": "SWS Local",
+		"_postman_id": "660aa196-0589-8d9e-a87b-e8724cf9f863",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"description": "",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"url": "http://localhost:8000/api/user/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Madhu",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "email",
+									"value": "madhu@email.com",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "client_id",
+									"value": "818e9c2b0cf02127e06bc4ccb90ac8d2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "scope",
+									"value": "public read:user write:user read:portfolio write:portfolio read:affiliate write:affiliate offline notifications",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "client_secret",
+									"value": "3iglb7pjwcmcow40k8cs0k8sc4c4w08",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth Token",
+					"request": {
+						"url": "http://localhost:8000/oauth/token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "madhukumarit23@gmail.com",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "client_id",
+									"value": "818e9c2b0cf02127e06bc4ccb90ac8d2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "scope",
+									"value": "public read:user write:user read:portfolio write:portfolio read:affiliate write:affiliate offline notifications",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "client_secret",
+									"value": "3iglb7pjwcmcow40k8cs0k8sc4c4w08",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Token Info",
+					"request": {
+						"url": "http://localhost:8000/oauth/token/info",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 8476bf46d0b8482490b86056252bfdaca0f4bcfb",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"url": "http://localhost:8000/oauth/token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "818e9c2b0cf02127e06bc4ccb90ac8d2",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "grant_type",
+									"value": "refresh_token",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "scope",
+									"value": "public read:user write:user read:portfolio write:portfolio read:affiliate write:affiliate offline notifications",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "client_secret",
+									"value": "3iglb7pjwcmcow40k8cs0k8sc4c4w08",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "refresh_token",
+									"value": "f810248dc5a921d8157bbccf0429959220dc5d3a",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blacklist",
+			"description": "",
+			"item": [
+				{
+					"name": "Blacklist Company",
+					"request": {
+						"url": "http://localhost:8000/api/user/company/blacklist",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 8476bf46d0b8482490b86056252bfdaca0f4bcfb",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"unique_symbol\": \"ABC:MOF\" \n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Purge Blacklist",
+					"request": {
+						"url": "http://localhost:8000/api/user/company/blacklist",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ec1db18448262e1a31041bfe305a463aeccef18d",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Read Blacklist",
+					"request": {
+						"url": "http://localhost:8000/api/user/company/blacklist",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3f59aec8adc48f4c1d9649238b9dfa398664cb2a",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"description": "",
+			"item": [
+				{
+					"name": "Company",
+					"request": {
+						"url": "http://localhost:8000/api/company/NYSE:ROP",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer e0e795ce33bb73952cd19799e3f468c0ef36b618",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"description": "",
+			"item": [
+				{
+					"name": "Portfolio",
+					"request": {
+						"url": "http://localhost:8000//api/user/portfolio",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer e0e795ce33bb73952cd19799e3f468c0ef36b618",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "some name",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "sharing",
+									"value": "1",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "currency_iso",
+									"value": "USD",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Portofolio",
+					"request": {
+						"url": "http://localhost:8000//api/user/portfolio/1",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3f59aec8adc48f4c1d9649238b9dfa398664cb2a",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Portfolio",
+					"request": {
+						"url": "http://localhost:8000/api/user/portfolio/2",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 3f59aec8adc48f4c1d9649238b9dfa398664cb2a",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Portfolio",
+					"request": {
+						"url": "http://localhost:8000/api/user/portfolio/2",
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 139e951e9eb141bdc426c24f0adb0bbbc22bb7db",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "different",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "sharing",
+									"value": "0",
+									"type": "text",
+									"enabled": true
+								},
+								{
+									"key": "currency_iso",
+									"value": "AUD",
+									"type": "text",
+									"enabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
